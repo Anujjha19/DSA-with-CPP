@@ -25,7 +25,8 @@ void bubbleSort(int arr[], int n)
     bubbleSort(arr, n - 1);
 }
 // Sorting  TC - O( n logn)
-int main() {
+int main()
+{
     int arr[5] = {5, 10, 8, 45, 1};
     printArray(arr, 5);
     int k = 2;
@@ -33,10 +34,9 @@ int main() {
     printArray(arr, 5);
     cout << "ans " << arr[k - 1] << endl;
 
-    for (int i = 0 ;i < k; i++) {
-    cout << arr[i] << endl;
-
-}
+    for (int i = 0; i < k; i++)
+    {
+        cout << arr[i] << endl;
+    }
     return 0;
-
 }
