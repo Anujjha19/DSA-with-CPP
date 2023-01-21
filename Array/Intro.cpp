@@ -14,7 +14,7 @@ int main()
     // Taking From User
     int n;
     cout << "N"
-         << "- ";
+                 << "- ";
     cin >> n;
     int brr[n];
     for (int i = 0; i < n; i++)
