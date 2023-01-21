@@ -1,3 +1,7 @@
+#include<vector>
+#include<iostream>
+using namespace std;
+
 
 void rearrange(int arr[], int n)
 {
