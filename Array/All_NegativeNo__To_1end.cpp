@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void moveZeroes(int arr[], int n)
+void allNegativeNumber(int arr[], int n)
 {
     int i=0;
     for(int j=0; j<n; j++){
@@ -18,7 +18,7 @@ void moveZeroes(int arr[], int n)
 // Auxiliary Space: O(1)
 
 /* //Using Sorting
-void moveZeroes(int arr[], int n){
+void allNegativeNumber(int arr[], int n){
         sort( arr , arr+n);
 }
 
@@ -32,7 +32,7 @@ int main()
     int arr[] = {-12, 11, -13, -5, 6, -7, 5, -3, -6};
     int i, arr_size = sizeof(arr) / sizeof(arr[0]);
 
-    moveZeroes(arr, arr_size);
+    allNegativeNumber(arr, arr_size);
 
     cout << "Array after Moving all Zeros at END is ";
     for (i = 0; i < arr_size; i++)
