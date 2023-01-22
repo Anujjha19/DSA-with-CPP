@@ -3,7 +3,7 @@ using namespace std;
 
 void rotateArray( int arr[] , int n){
 
-    /* //By One  
+     /* //By One  
     int x = arr[n - 1], i; 
     for (i = n - 1; i > 0; i--) 
     arr[i] = arr[i - 1];  
@@ -17,6 +17,9 @@ void rotateArray( int arr[] , int n){
     }
 
 }
+Expected Time Complexity: O(N)
+Expected Auxiliary Space: O(1)
+
 
 int main()
 {
