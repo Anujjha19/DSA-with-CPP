@@ -1,5 +1,4 @@
-Move_Zeroesclass Solution {
-public:
+
     void setZeroes(vector<vector<int>>& matrix) {
         int col0=1 , rows = matrix.size() , cols=matrix[0].size();
         for(int i=0; i< rows ; i++){
@@ -19,4 +18,3 @@ public:
         }
 
     }
-};
