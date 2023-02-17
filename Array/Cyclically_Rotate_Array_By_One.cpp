@@ -17,8 +17,8 @@ void rotateArray( int arr[] , int n){
     }
 
 }
-Expected Time Complexity: O(N)
-Expected Auxiliary Space: O(1)
+// Expected Time Complexity: O(N)
+// Expected Auxiliary Space: O(1)
 
 
 int main()
