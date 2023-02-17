@@ -40,7 +40,7 @@ void merge(int arr[], int low, int mid, int high, int n)
         arr[i] = ans[i - low];
     }
         
-}
+}co
 void merge_sort(int arr[], int low, int high, int n)
 {
     if (low >= high)
