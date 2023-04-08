@@ -1,7 +1,6 @@
-#include<vector>
-#include<iostream>
+#include <vector>
+#include <iostream>
 using namespace std;
-
 
 void rearrange(int arr[], int n)
 {
@@ -40,9 +39,7 @@ void rearrange(int arr[], int n)
     }
 }
 
-
-
-/* 
+/*
 vector<int> rearrangeArray(vector<int> &nums)
     {
         vector<int> pos;
