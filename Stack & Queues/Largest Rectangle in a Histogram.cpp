@@ -38,7 +38,7 @@ int getMaxArea(vector<int>& heights, int n) {
 
     for (int i = 0; i < n; i++) {
         int l = heights[i];
-        int bw = next[i] - prev[i] - 1;
+        int bw = next[i] - prev[i] + 1;
         int newArea = l * bw;
         area = max(area, newArea);
     }
