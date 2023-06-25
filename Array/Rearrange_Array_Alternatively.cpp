@@ -3,7 +3,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void rearrange(long long *arr, int n)
+void rearrange7(long long *arr, int n)
 {
     /*      int output[n];
             int i = 0, j = n - 1, k = 0;
@@ -16,7 +16,7 @@ void rearrange(long long *arr, int n)
             cout << output[i] << " ";
             cout << endl;
         } */
-
+}
     void rearrange(long long *arr, int n)
     {
         // Your code here
