@@ -34,8 +34,8 @@ vector<int> printKMax(int arr[], int n, int k)
 
 int main()
 {
-    // int arr[] = {1, 2, 3, 1, 4, 5, 2, 3, 6};
-    int arr[] = {c};
+     int arr[] = {1, 2, 3, 1, 4, 5, 2, 3, 6};
+    //int arr[] = {0};
     int n = sizeof(arr) / sizeof(arr[0]);
     int k = 3;
     vector<int> v = printKMax(arr, n, k);
