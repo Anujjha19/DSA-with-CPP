@@ -32,7 +32,8 @@ int Longest_Consec_Seq_B(int arr[], int n)
 int Longest_Consec_Seq(int arr[], int n)
 {
 
-    if (n == 0) {
+    if (n == 0)
+    {
         return 0;
     }
 
@@ -58,43 +59,45 @@ int Longest_Consec_Seq(int arr[], int n)
             lastSmallest = arr[i];
         }
 
-        longest = max( longest , currCount);
+        longest = max(longest, currCount);
     }
     return longest;
 }
 
-int longestSuccessiveElements(vector<int>&a) {
+int longestSuccessiveElements(vector<int> &a)
+{
     // Write your code here.
-  int n = a.size();
-    if (n == 0) {
+    int n = a.size();
+    if (n == 0)
+    {
         return 0;
     }
 
     int longest = 1;
     unordered_set<int> st;
-    for (const auto& num : a) {
+    for (const auto &num : a)
+    {
         st.insert(num);
     }
 
-    for (const auto& num : st) {
-        if (st.find(num - 1) == st.end()) {
+    for (const auto &num : st)
+    {
+        if (st.find(num - 1) == st.end())
+        {
             int cnt = 1;
             int x = num;
 
-            while (st.find(x + 1) != st.end()) {
-               
+            while (st.find(x + 1) != st.end())
+            {
+
                 cnt++;
-                 x++;
+                x++;
             }
             longest = max(longest, cnt);
         }
     }
     return longest;
-
-
-
 }
-
 
 int main()
 {
