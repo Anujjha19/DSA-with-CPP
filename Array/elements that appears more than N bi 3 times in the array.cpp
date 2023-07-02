@@ -62,7 +62,7 @@ vector<int> majorityElement_BETTER(vector<int> v)
         if (ls.size() == 2)
             break;
     }
-
+    sort(ls.begin() , ls.end());
     return ls;
 }
 

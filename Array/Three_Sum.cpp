@@ -28,6 +28,41 @@ vector<vector<int>> threeSum(vector<int> &nums)
     return ans;
 }
 
+vector<vector<int>> threeSum(vector<int> &nums)
+{
+
+    int n = nums.size();
+    sort(nums.begin(), nums.end());
+    vector<vector<int>> ans;
+    for (int i = 0; i < n; i++)
+    {
+        if (i > 0 && nums[i] == nums[i - 1])
+            continue;
+        int j = i + 1;
+        int k = n - 1;
+        while (j < k)
+        {
+            int sum = nums[i] + nums[j] + nums[k];
+            if (sum < 0)
+                j++;
+            else if (sum > 0)
+                k--;
+            else
+            {
+                vector<int> temp = {nums[i], nums[j], nums[k]};
+                ans.push_back(temp);
+                j++;
+                k--;
+                while (j < k && nums[j] == nums[j - 1])
+                    j++;
+                while (j < k && nums[k] == nums[k + 1])
+                    k--;
+            }
+        }
+    }
+    return ans;
+}
+
 int main()
 {
     vector<int> arr{-1, 0, 1, 2, -1, -4};
@@ -44,31 +79,3 @@ int main()
     }
     return 0;
 }
-
-
-/* class Solution {
-public:
-    vector<vector<int>> threeSum(vector<int>& nums) {
-        if(nums.size() < 3) return {};
-        vector<vector<int>> ret;
-        sort(nums.begin(),nums.end());
-        for(int i=0;i<nums.size()-1;++i){
-            if(i>0 && nums[i] == nums[i-1]) continue;
-            int tar = 0 - nums[i],hi=nums.size()-1,lo=i+1;
-            while(hi>lo){
-                int summ = nums[hi]+nums[lo];
-                if(summ > tar)
-                    hi--;
-                else if(summ < tar)
-                    lo++;
-                else{
-                    ret.push_back({nums[i],nums[lo],nums[hi]});
-                    lo++,hi--;
-                    while(hi>lo && nums[hi]==nums[hi+1]) hi--;
-                    while(hi>lo && nums[lo]==nums[lo-1]) lo++;
-                }    
-            }
-        }
-        return ret;
-    }
-}; */
