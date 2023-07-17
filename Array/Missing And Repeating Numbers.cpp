@@ -42,7 +42,19 @@ vector<int> findMissingRepeatingNumbers_Better(vector<int> a)
     }
 
     // Find the repeating and missing number:
-finf}
+    vector<int> result;
+int m =-1;
+int r =-1 ;
+    for (int i = 1; i <= n; i++)
+    {
+        if (hash[i] == 0)          // missing number
+            m =i ;
+        else if (hash[i] > 1)     // repeating number
+            r =i ; 
+    }
+
+    return result;
+}
 
 vector<int> findMissingRepeatingNumbers_Optimal1_Maths(vector<int> a)
 {
