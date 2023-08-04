@@ -44,7 +44,7 @@ int main()
     sumofFirstNno_ParametrisedWay(n, 0);
     cout << endl;
 
-    cout << " Sum Is : " << sumofFirstNno_Recursion_Functional(n);
+    cout << "Recursive Sum Is : " << sumofFirstNno_Recursion_Functional(n);
 
     cout << endl
          << " Factorial Is : " << Factorial(n);

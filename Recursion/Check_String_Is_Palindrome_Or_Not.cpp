@@ -3,6 +3,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
+//2 Pointer
 bool palindrome(string str)
 {
     string y = str;
@@ -13,7 +15,6 @@ bool palindrome(string str)
     {
         swap(str[start++], str[end--]);
     }
-
     if (y == str)
         return true;
     else
@@ -32,6 +33,7 @@ bool palindrome(string str)
     return true;
 } */
 
+// Recursive Way
 bool check_If_First_last_equal(int i, string &str)
 {
     int n = str.length();
